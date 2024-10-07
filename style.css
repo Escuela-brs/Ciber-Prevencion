@@ -1,0 +1,418 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: sans-serif;
+ scroll-behavior: smooth;
+}
+
+main {
+ margin: 20px 40px;
+}
+@media screen and (max-width: 550px) {
+ main {
+  margin: 13px 10px;
+ }
+}
+header {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0.5rem 1rem;
+ height: 65px;
+ background-color: #ececfa;
+ position: sticky;
+ top: 0;
+ z-index: 99;
+ color: black;
+ width: 100%;
+ font-style: italic;
+}
+
+/**/
+
+.nav_uno, .nav_dos {
+ display: flex;
+ justify-content: space-between;
+}
+
+.nav_list {
+ list-style-type: none;
+ display: flex;
+ gap: 0.5rem;
+ margin-left: 20px;
+}
+
+.nav_list li a {
+ text-decoration: none;
+ color: #1c1c1c;
+ font-weight: 450;
+}
+
+.abrir_menu, .cerrar_menu {
+ display: none;
+}
+
+@media screen and (max-width: 550px) {
+ .abrir_menu, 
+ .cerrar_menu {
+  display: inline-block;
+  border: 0;
+  font-size: 1.75rem;
+  background-color: transparent;
+  cursor: pointer;
+ }
+ .abrir_menu {
+  color: #1c1c1c;
+  margin: 10px;
+ }
+ .cerrar_menu {
+  color: #ececec;
+  position: absolute;
+  right: 20px;
+  top: 9px;
+  font-size: 2.5rem;
+ }
+ .nav_uno {
+  transform: translateX(100%);
+  opacity: 0;
+  height: 100vh;
+  width: 63%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #1c1c1c;
+  padding: 9rem 1rem 40.5rem 0.5rem;
+  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  visibility: hidden;
+ }
+ .nav_uno.visible {
+  transform: translateX(0%);
+  opacity: 1;
+  visibility: visible;
+ }
+ .nav_list {
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+  text-align: start;
+ }
+ .nav_link {
+  margin: 0.75rem;
+  cursor: pointer;
+  padding: 10px;
+  transition: transform 0.5s ease;
+ }
+ .nav_list li a {
+  color: #ececec;
+ }
+}
+
+/**/
+
+/* General */
+
+section {
+ display: flex;
+ flex-wrap: wrap;
+}
+h4 {
+ color: white;
+ margin: 7px 7px 7px 7px;
+ opacity: 85%;
+}
+h3 {
+ font-size: 20px;
+}
+li {
+ margin-left: 14px;
+ font-family: 'Poppins', sans-serif;
+ opacity: 85%;
+}
+.parrafo {
+ display: inline;
+ opacity: 85%;
+ margin: 0px 0px 0px 0px;
+ font-size: 16px;
+ font-family: 'Poppins', sans-serif;
+ align-items: center;
+}
+/*span {
+ display: flex;
+ color: white;
+ align-items: center;
+ opacity: 65%;
+ font-size: 14px;
+ margin: 0px 5px 0px 0px;
+ font-family: 'Poppins', sans-serif;
+ text-justify: center;
+}
+.reloj {
+ padding-right: 5px;
+}*/
+.title_p {
+ margin-bottom: 0px;
+}
+.titulo_p {
+ margin: 15px 10px;
+ margin-top: 15px;
+}
+/*.ver_mas {
+ opacity: 70%;
+ border: none;
+ margin: 3px;
+ padding: 3px;
+ background: #ececfa;
+ border-radius: 0 10px 0 10px;
+ cursor: pointer;
+}*/
+
+.contacto_caja {
+ margin: 10px 49px;
+}
+input, textarea {
+ margin: 7px 0px 15px 0px;
+ padding: 10px;
+ width: 50%;
+ border: darkgray 1px solid;
+ border-radius: 3px;
+ font-family: 'Poppins', sans-serif;
+}
+.cont_btn {
+ width: 50%;
+ height: 40px;
+ margin: 3px 0 0px 0;
+ border: darkgray 1px solid;
+ border-radius: 3px;
+ font-family: 'Poppins', sans-serif;
+ background: white;
+ font-size: 16.5px;
+ font-weight: 400;
+ background: #ececfa;
+}
+label {
+ display: block;
+ font-weight: 450;
+ opacity: 90%;
+ font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 550px) {
+ .contacto_caja {
+  margin: 15px 22px;
+ }
+ input, textarea {
+ margin: 7px 0px 15px 0px;
+ padding: 10px;
+ width: 100%;
+ border: darkgray 1px solid;
+ border-radius: 3px;
+ font-family: 'Poppins', sans-serif;
+ }
+.cont_btn {
+ width: 100%;
+ height: 40px;
+ margin: 3px 0 0px 0;
+ border: darkgray 1px solid;
+ border-radius: 3px;
+ font-family: 'Poppins', sans-serif;
+ background: white;
+ font-size: 16.5px;
+ font-weight: 400;
+ background: #ececfa;
+ }
+ label {
+ display: inline;
+ font-weight: 450;
+ opacity: 90%;
+ font-family: 'Poppins', sans-serif;
+ }
+}
+
+/* Noticias Nuevas */
+
+.new_not {
+ display: flex;
+ overflow: scroll;
+}
+.element {
+ flex: 1 0 auto;
+ margin: 5px;
+ background-color: #ececfa;
+ width: 375px;
+ height: 300px;
+ align-content: end;
+ text-align: start;
+ color: white;
+ border-radius: 5px;
+ display: flex;
+ text-align: start;
+ align-items: end;
+ text-decoration: none;
+ color: black;
+ cursor: pointer;
+ padding: 5px 0 10px 10px;
+}
+@media screen and (max-width: 550px) { 
+ .new_not {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+ }
+ .element {
+  width: 190px;
+  height: 220px;
+ }
+ .element h4 {
+  margin-left: 5px;
+ }
+ .element span {
+  display: flex;
+  color: white;
+  align-items: center;
+  opacity: 65%;
+  font-size: 14px;
+  margin: 0px 5px 0px 0px;
+  font-family: 'Poppins', sans-serif;
+  text-justify: center;
+ }
+ .reloj {
+  padding-right: 5px;
+ }
+}
+
+/* Tecnologías pagina*/
+
+.tec {
+ display: flex;
+ margin: 6px 9px;
+ width: 48%;
+ height: 200px;
+ border-radius: 5px;
+ text-align: start;
+ align-items: end;
+}
+.tec {
+ text-decoration: none;
+ color: black;
+ padding: 5px 0 10px 10px;
+ cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+ .tec {
+  width: 95%;
+  height: 170px;
+ }
+}
+
+/* Medicamentos Basicos*/
+
+.elements h2 {
+ display: flex;
+ margin: 10px 5pxx;
+}
+.elements {
+ display: flex;
+ margin: 9px;
+ width: 48%;
+ height: 300px;
+ border-radius: 5px;
+ text-align: start;
+ align-items: end;
+}
+.elements {
+ text-decoration: none;
+ color: black;
+ padding: 5px 0 10px 10px;
+ cursor: pointer;
+}
+@media screen and (max-width: 550px) {
+ .elements {
+  width: 95%;
+  height: 240px;
+ }
+}
+
+/* Footer */
+
+footer {
+ background: #ececfa;
+}
+h2 {
+ text-align: center;
+ opacity: 60%;
+ padding-top: 5px;
+ padding-bottom: 10px;
+}
+.copyright {
+ display: flex;
+ background: #ececfa;
+ width: 100%;
+ height: 60px;
+ align-items: center;
+ justify-content: start;
+ padding: 10px 10px 10px 10px;
+ justify-content: space-between;
+}
+.parrafo_foo {
+ display: inline-block;
+ opacity: 45%;
+ margin: 15px 10px 15px 10px;
+ font-size: 15px;
+ font-family: 'Poppins', sans-serif;
+ align-items: center;
+ }
+hr {
+ width: 95%;
+ margin: 0 20px;
+}
+@media screen and (max-width: 550px) {
+ hr {
+  margin: 0 10px;
+ }
+ .parrafo_foo {
+  margin: 10px 10px 0px 0px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+ }
+}
+
+/* Boton hacia arriba */
+
+#scrollToTop {
+ bottom: 10px;
+ right: 10px;
+ background: white;
+ border: none;
+ cursor: pointer;
+ padding: 5px;
+ border-radius: 50%;
+ transition: transform 0.3s ease;
+}
+
+#scrollToTop:hover {
+ transform: scale(1.1);
+}
+
+/* Cambios en los tipos de acosos */
+
+.once {
+ background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.5)), url(/img/tecnolo/seguridad_computadora.png);
+ background-size: cover;
+ background-position: center;
+}
+.doce {
+ background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.5)), url(/img/tecnolo/amenzas_informaticas.jpg);
+ background-size: cover;
+ background-position: center;
+}
+.trece {
+ background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.5)), url(/img/tecnolo/proteccion_informaticas.jpg);
+ background-size: cover;
+ background-position: center;
+}
