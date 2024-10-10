@@ -20,7 +20,7 @@ header {
  justify-content: space-between;
  padding: 0.5rem 1rem;
  height: 65px;
- background-color: #ececfa;
+ background-color: #0cc0df;
  position: sticky;
  top: 0;
  z-index: 99;
@@ -45,7 +45,7 @@ header {
 
 .nav_list li a {
  text-decoration: none;
- color: #1c1c1c;
+ color: white;
  font-weight: 450;
 }
 
@@ -108,13 +108,19 @@ header {
   transition: transform 0.5s ease;
  }
  .nav_list li a {
-  color: #ececec;
+  color: white;
  }
 }
 
 /**/
 
 /* General */
+
+img {
+ width: 100%;
+ height: auto;
+ border-radius: 3px;
+}
 
 section {
  display: flex;
@@ -129,15 +135,16 @@ h3 {
  font-size: 20px;
 }
 li {
- margin-left: 14px;
+ margin-left: 25px;
  font-family: 'Poppins', sans-serif;
  opacity: 85%;
+ font-size: 15px;
 }
 .parrafo {
  display: inline;
  opacity: 85%;
  margin: 0px 0px 0px 0px;
- font-size: 16px;
+ font-size: 15px;
  font-family: 'Poppins', sans-serif;
  align-items: center;
 }
@@ -161,15 +168,6 @@ li {
  margin: 15px 10px;
  margin-top: 15px;
 }
-/*.ver_mas {
- opacity: 70%;
- border: none;
- margin: 3px;
- padding: 3px;
- background: #ececfa;
- border-radius: 0 10px 0 10px;
- cursor: pointer;
-}*/
 
 .contacto_caja {
  margin: 10px 49px;
@@ -192,7 +190,7 @@ input, textarea {
  background: white;
  font-size: 16.5px;
  font-weight: 400;
- background: #ececfa;
+ background: #0cc0df;
 }
 label {
  display: block;
@@ -223,7 +221,7 @@ label {
  background: white;
  font-size: 16.5px;
  font-weight: 400;
- background: #ececfa;
+ background: #0cc0df;
  }
  label {
  display: inline;
@@ -340,7 +338,8 @@ label {
 /* Footer */
 
 footer {
- background: #ececfa;
+ background: #0cc0df;
+ margin: 0;
 }
 h2 {
  text-align: center;
@@ -350,7 +349,7 @@ h2 {
 }
 .copyright {
  display: flex;
- background: #ececfa;
+ background: #0cc0df;
  width: 100%;
  height: 60px;
  align-items: center;
@@ -360,9 +359,9 @@ h2 {
 }
 .parrafo_foo {
  display: inline-block;
- opacity: 45%;
+ opacity: 55%;
  margin: 15px 10px 15px 10px;
- font-size: 15px;
+ font-size: 14px;
  font-family: 'Poppins', sans-serif;
  align-items: center;
  }
@@ -415,4 +414,4 @@ hr {
  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.5)), url(/img/tecnolo/proteccion_informaticas.jpg);
  background-size: cover;
  background-position: center;
-}
+ }
