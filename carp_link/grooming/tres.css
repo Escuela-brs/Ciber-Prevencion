@@ -102,8 +102,8 @@ header {
   text-align: start;
  }
  .nav_link {
-  display: inline-block;
-  margin: 0.75rem 2.5rem 0.75rem 0.75rem;
+  display: block;
+  margin: 0.75rem 0.75rem 0.75rem 0.75rem;
   cursor: pointer;
   padding: 10px;
   transition: transform 0.5s ease;
