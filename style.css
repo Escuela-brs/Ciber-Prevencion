@@ -47,6 +47,7 @@ header {
  color: white;
  font-weight: 550;
  font-style: sans-serif;
+ font-size: 13px;
 }
 
 .abrir_menu, .cerrar_menu {
@@ -183,7 +184,7 @@ h3 {
  font-size: 20px;
 }
 li {
- margin-left: 25px;
+ margin-left: 20px;
  font-family: 'Poppins', sans-serif;
  opacity: 85%;
  font-size: 14px;
@@ -389,15 +390,6 @@ footer {
  align-content: center;
  text-align: center;
 }
-.enlaces {
- display: flex;
- justify-content: center;
- margin: 17px 0 0 0;
-}
-.enla {
- text-decoration: none;
- color: white;
-}
 .copyright {
  display: flex;
  background: #0cc0df;
@@ -422,6 +414,15 @@ hr {
 .hr_fuera {
  width: 89.5%;
  margin: 0 20px 0 20px;
+}
+.enlaces {
+ display: inline-flex;
+ justify-content: space-between;
+ margin: 17px 5px 5px 0;
+}
+.enla {
+ text-decoration: none;
+ color: white;
 }
 @media screen and (max-width: 550px) {
  hr {
